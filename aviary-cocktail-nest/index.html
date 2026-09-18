@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aviary Cocktail Nest — a premium dining and cocktail destination in Shastri Nagar, Kanpur.">
+  <title>Aviary Cocktail Nest | Kanpur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Aviary wishes you a beautiful evening <span>✦</span> Shastri Nagar, Kanpur</div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Aviary Cocktail Nest home">
+      <span class="brand-script">Aviary</span>
+      <span class="brand-sub">COCKTAIL NEST</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="reserve-btn header-reserve" data-open-reservation>Reserve a Table</button>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="#story">Our Story</a>
+    <a href="#menu">Menu</a>
+    <a href="#experience">Experience</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <button class="reserve-btn" data-open-reservation>Reserve a Table</button>
+  </div>
+
+  <main>
+    <section class="hero">
+      <img class="hero-bg" src="assets/aviary-7.jpg" alt="Aviary Cocktail Nest dining room">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">DINING • COCKTAILS • LIVE MUSIC</p>
+        <h1>Where every<br><em>evening</em> takes flight.</h1>
+        <p class="hero-copy">A lush cocktail nest in the heart of Kanpur, bringing expressive North Indian flavours, crafted cocktails and intimate nights together.</p>
+        <div class="hero-actions">
+          <button class="gold-btn" data-open-reservation>Reserve Your Table <span>↗</span></button>
+          <a class="text-btn" href="#menu">Explore the menu <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div><span>4.4</span><small>Google rating · 1,174 reviews</small></div>
+        <div><span>12:30 AM</span><small>Kitchen & bar close</small></div>
+        <div><span>Kanpur</span><small>Shastri Nagar</small></div>
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="intro section" id="story">
+      <div class="section-kicker">THE AVIARY</div>
+      <div class="intro-grid">
+        <div>
+          <h2>A little wild.<br><em>Very inviting.</em></h2>
+        </div>
+        <div class="intro-text">
+          <p class="lead">Step inside a restaurant designed like an escape — warm woods, woven nests, dramatic botanicals and a bar that glows long after sunset.</p>
+          <p>Aviary Cocktail Nest pairs a relaxed, premium setting with food meant for sharing and cocktails made for lingering. Come for dinner, stay for the atmosphere, and let the evening unfold.</p>
+          <a class="line-link" href="#experience">Discover the experience <span>→</span></a>
+        </div>
+      </div>
+      <div class="feature-strip">
+        <div><strong>01</strong><span>North Indian<br>Kitchen</span></div>
+        <div><strong>02</strong><span>Signature<br>Cocktails</span></div>
+        <div><strong>03</strong><span>Live<br>Music</span></div>
+        <div><strong>04</strong><span>Private<br>Nest Seating</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">FROM THE KITCHEN & BAR</div>
+          <h2>Made to be <em>remembered.</em></h2>
+        </div>
+        <p>Explore a few favourites inspired by the flavours and energy of Aviary.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="active" data-tab="signature">Signature</button>
+        <button data-tab="starters">Starters</button>
+        <button data-tab="mains">Mains</button>
+        <button data-tab="cocktails">Cocktails</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="menu-panel active" data-panel="signature">
+          <article class="dish"><div><span class="dish-tag">CHEF'S PICK</span><h3>Aviary Special Tikka</h3><p>Charred Indian flavours, creamy marinade and fresh herbs.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><span class="dish-tag">HOUSE FAVOURITE</span><h3>Butter Chicken</h3><p>Silky tomato gravy, gentle spice and smoky tandoori notes.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><span class="dish-tag">VEGETARIAN</span><h3>Chef's Paneer Selection</h3><p>Soft paneer, roasted peppers and aromatic house spices.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><span class="dish-tag">SHAREABLE</span><h3>Aviary Tandoor Platter</h3><p>A generous selection from the tandoor for the whole table.</p></div><strong>₹—</strong></article>
+        </div>
+        <div class="menu-panel" data-panel="starters">
+          <article class="dish"><div><h3>Achari Paneer Tikka</h3><p>Pickled spices, charred paneer and cooling herbs.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Malai Chicken</h3><p>Silky, creamy and gently charred.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Crispy Corn & Peppers</h3><p>Crunchy, bright and built for sharing.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Loaded Aviary Platter</h3><p>A table-friendly selection of house starters.</p></div><strong>₹—</strong></article>
+        </div>
+        <div class="menu-panel" data-panel="mains">
+          <article class="dish"><div><h3>Dal Makhani</h3><p>Slow-cooked black lentils with a rich, smoky finish.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Paneer Lababdar</h3><p>Tomato, peppers and aromatic spices.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Butter Chicken</h3><p>Classic comfort with Aviary's warm, rich finish.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Assorted Indian Breads</h3><p>Naan, tandoori roti and layered breads for the table.</p></div><strong>₹—</strong></article>
+        </div>
+        <div class="menu-panel" data-panel="cocktails">
+          <article class="dish"><div><span class="dish-tag">SIGNATURE</span><h3>House Cocktail</h3><p>Seasonal fruit, botanicals and a polished Aviary finish.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Smoked Old Fashioned</h3><p>Deep, spirit-forward and finished tableside.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Berry & Citrus Sour</h3><p>Bright, tart and balanced with a soft foam.</p></div><strong>₹—</strong></article>
+          <article class="dish"><div><h3>Zero-Proof Botanical</h3><p>A refreshing non-alcoholic blend for slow evenings.</p></div><strong>₹—</strong></article>
+        </div>
+      </div>
+      <p class="menu-note">Prices and menu items may change. Ask our team for today's full menu and availability.</p>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-image">
+        <img src="assets/aviary-8.jpg" alt="Bright view of Aviary Cocktail Nest interior">
+      </div>
+      <div class="experience-copy">
+        <div class="section-kicker">THE NEST</div>
+        <h2>Your table,<br><em>your little world.</em></h2>
+        <p>From our signature woven nest seating to the softly lit bar, every corner is built for conversations, celebrations and photographs you'll want to keep.</p>
+        <ul>
+          <li><span>✦</span> Dine-in, takeaway & delivery</li>
+          <li><span>✦</span> Curated cocktail & beverage program</li>
+          <li><span>✦</span> Live music evenings</li>
+          <li><span>✦</span> Intimate group & celebration seating</li>
+        </ul>
+        <button class="outline-btn" data-open-reservation>Plan an evening <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">A LOOK INSIDE</div>
+          <h2>Scenes from <em>the nest.</em></h2>
+        </div>
+        <p>Warm lights, wild greens, beautiful plates and a bar that comes alive after dark.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-item item-large" data-full="assets/aviary-7.jpg"><img src="assets/aviary-7.jpg" alt="Aviary dining room"></button>
+        <button class="gallery-item" data-full="assets/aviary-3.jpg"><img src="assets/aviary-3.jpg" alt="Aviary cocktail bar"></button>
+        <button class="gallery-item" data-full="assets/aviary-1.jpg"><img src="assets/aviary-1.jpg" alt="Pizza at Aviary"></button>
+        <button class="gallery-item item-tall" data-full="assets/aviary-4.jpg"><img src="assets/aviary-4.jpg" alt="Nest seating"></button>
+        <button class="gallery-item" data-full="assets/aviary-5.jpg"><img src="assets/aviary-5.jpg" alt="Cocktails"></button>
+        <button class="gallery-item item-wide" data-full="assets/aviary-8.jpg"><img src="assets/aviary-8.jpg" alt="Aviary interior"></button>
+        <button class="gallery-item" data-full="assets/aviary-2.jpg"><img src="assets/aviary-2.jpg" alt="Indian dishes and breads"></button>
+      </div>
+    </section>
+
+    <section class="music-banner">
+      <img src="assets/aviary-3.jpg" alt="Aviary Cocktail Nest bar at night">
+      <div class="music-overlay"></div>
+      <div class="music-content">
+        <div class="section-kicker">AFTER SUNSET</div>
+        <h2>Good food.<br>Great cocktails.<br><em>Live energy.</em></h2>
+        <p>Make the evening a little longer with music, conversation and the glow of the nest.</p>
+        <button class="gold-btn" data-open-reservation>Reserve for tonight <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="reviews section">
+      <div class="section-kicker">WHAT GUESTS SAY</div>
+      <div class="review-wrap">
+        <div class="rating-big"><span>4.4</span><div class="stars">★★★★★</div><small>1,174 reviews</small></div>
+        <div class="review-slider">
+          <article class="review active"><p>“A beautiful ambience, great lighting and a lively atmosphere. The space really feels like a cocktail nest.”</p><strong>— Guest review</strong></article>
+          <article class="review"><p>“A great place for an evening out. The interiors are memorable and the food works wonderfully for sharing.”</p><strong>— Guest review</strong></article>
+          <article class="review"><p>“Loved the decor and the live-music vibe. Perfect for a relaxed dinner with friends.”</p><strong>— Guest review</strong></article>
+          <div class="review-controls"><button id="prevReview" aria-label="Previous review">←</button><button id="nextReview" aria-label="Next review">→</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div>
+        <div class="section-kicker">COME FLY WITH US</div>
+        <h2>Make tonight<br><em>an occasion.</em></h2>
+      </div>
+      <div class="cta-details">
+        <p>122/553, near Hotel Bhagyaraj Palace,<br>Industrial Estate, Shastri Nagar,<br>Kanpur, Uttar Pradesh 208005</p>
+        <p><strong>Open daily · Closes 12:30 AM</strong></p>
+        <div class="cta-actions">
+          <button class="gold-btn" data-open-reservation>Reserve a table <span>↗</span></button>
+          <a class="outline-btn" href="tel:+917991565477">Call 079915 65477</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-script">Aviary</span>
+      <span class="brand-sub">COCKTAIL NEST</span>
+    </div>
+    <p>एवियरी कॉकटेल नेस्ट कानपुर</p>
+    <div class="footer-links">
+      <a href="#story">Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://maps.google.com/?q=122/553+Industrial+Estate+Shastri+Nagar+Kanpur" target="_blank" rel="noopener">Directions</a>
+    </div>
+    <small>© <span id="year"></span> Aviary Cocktail Nest. Crafted for memorable evenings.</small>
+  </footer>
+
+  <div class="modal" id="reservationModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Close reservation form">×</button>
+      <div class="section-kicker">RESERVE THE NEST</div>
+      <h2>Book your <em>evening.</em></h2>
+      <p>Send your details and our team can confirm availability.</p>
+      <form id="reservationForm">
+        <label>Name<input name="name" type="text" placeholder="Your name" required></label>
+        <div class="form-row">
+          <label>Date<input name="date" type="date" required></label>
+          <label>Time<input name="time" type="time" required></label>
+        </div>
+        <label>Guests<select name="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option></select></label>
+        <label>Phone<input name="phone" type="tel" placeholder="10-digit mobile number" required></label>
+        <button class="gold-btn full" type="submit">Request reservation <span>→</span></button>
+      </form>
+      <div class="form-success" id="formSuccess">Thank you. Your reservation request is ready to be sent to the Aviary team.</div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
