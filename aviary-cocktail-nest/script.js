@@ -103,6 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+  // Scroll reveal animations
+  const revealItems = $$(".reveal");
+  if ("IntersectionObserver" in window) { const observer = new IntersectionObserver((entries, obs) => { entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add("is-visible"); obs.unobserve(entry.target); } }); }, {threshold:.14, rootMargin:"0px 0px -60px 0px"}); revealItems.forEach(item => observer.observe(item)); } else { revealItems.forEach(item => item.classList.add("is-visible")); }
+  const header = $(".site-header");
+  window.addEventListener("scroll", () => header && header.classList.toggle("header-scrolled", window.scrollY > 40), {passive:true});
+
 // Disable right-click
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
